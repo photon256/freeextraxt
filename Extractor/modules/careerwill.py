@@ -92,7 +92,7 @@ async def career_will(app, message):
                 "password": password,
                 "deviceModel": "chrome",
                 "deviceVersion": "Chrome+119",
-                "email": email
+                "email": email,
             }
 
             response = requests.post(login_url, headers=headers, json=data)
