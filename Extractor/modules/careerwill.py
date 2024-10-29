@@ -117,8 +117,8 @@ async def career_will(app, message):
     await input1.delete(True)
     batch_url = "https://elearn.crwilladmin.com/api/v3/my-batch"
     response = requests.get(batch_url, headers=headers)
-    data = response.json()
-    topicid = data["data"]["batchData"]
+    output = response.json()
+    topicid = output["data"]["batchData"]
 
     FFF = "**BATCH-ID     -     BATCH NAME**\n\n"
     for data in topicid:
